@@ -8,6 +8,8 @@ function begin_game()
 	gameover=false
 	win=false
 	
+	prev_mines=mines
+
 	sfxflag=true
 	
 	tmr1=0

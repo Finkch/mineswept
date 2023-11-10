@@ -38,7 +38,12 @@ function _init()
 		init_grid(g.w,g.h)
 	end
 	
-	mines=flr(g.w*g.h/5)
+	if mines==nil then
+		mines=flr(g.w*g.h/5)
+		prev_mines=mines
+	else
+		mines=prev_mines
+	end
 	
 	init_cursor()
 	init_menu()
